@@ -1,5 +1,5 @@
 import requests, json, msgpack, os
-from tqdm import tqdm, trange
+from tqdm import tqdm
 
 def list_get():
     response = requests.get("https://api.matsurihi.me/mltd/v1/version/latest").content.decode("utf-8")
