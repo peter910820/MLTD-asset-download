@@ -1,5 +1,7 @@
-from src.tool import list_get,filename_get
+import asyncio
 
-list = list_get()
+from src.tool import AssetDownload
 
-filename_get(list)
+if __name__ == "__main__":
+    asset_download = AssetDownload()
+    asyncio.run(asset_download.main())
